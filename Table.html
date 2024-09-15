@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Table Calculator</title>
+
+    <style>
+        main{
+            background-image: url(https://t3.ftcdn.net/jpg/03/44/67/38/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg);
+            background-size: cover;
+            height: 530px;
+            /* margin-top: 80px; */
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section{
+            width: 40%;
+            height: 350px;
+            text-align: center;
+            justify-content: center;
+            /* background-image: linear-gradient(206, 145, 64); */
+            background-color: none;
+            border: inset red;
+            border-radius: 20px;
+        }
+
+        h3{
+            color:black;
+            /* background: -webkit-linear-gradient(#c52ef7, #ea2463);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; */
+        }
+
+        #number, button{
+            border: 3px /*#306EFF*/ black ;
+            border-style: groove ;
+            font-size: small;
+            font-weight: 600;
+        }
+        #number{
+            width: 200px;
+            height: 17px;
+        }
+
+        input:focus{ 
+            border: 3px /*#306EFF*/ black;
+            border-style: groove /*#306EFF*/;
+        }
+        @media screen and (min-width: 375px) {
+            #number{
+                font-size: 8px;
+                width: 88px;
+                margin: 5px
+            }
+        }
+
+        @media screen and (min-width: 320px) {
+            #number{
+                font-size: 8px;
+                width: 88px;
+                margin: 5px;
+            }
+        }
+
+        p{
+            font-weight:900;
+            color: black;
+        }
+        p{
+            /* background: linear-gradient(to right, #911a80, #d42b45);
+            background-clip: text;
+            color: transparent; */
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <div class="section">
+            <h3>Math Table Generator</h3>
+            <input type="number" name="Number" id="number" placeholder="Enter Numbers Only">
+            <button onclick="tableNum()">Click</button>
+            <div class="table">
+                <p class="values"></p>
+            </div>
+        </div>
+    </main>
     
     <script src="Table.js"></script>
 </body>
